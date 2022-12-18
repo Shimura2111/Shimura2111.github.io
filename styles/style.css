@@ -1,4 +1,42 @@
-.main {
-    background-color: aqua;
-    font-family: 'Courier New', Courier, monospace;
+* {
+    margin: 0;
+    padding: 0;
+
+    color: white;
+    background-color: black;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.flex {
+    display: flex;
+}
+
+.general {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.general > * {
+    margin-bottom: 10px;
+}
+
+.img {
+    border-radius: 50%;
+    width: 256px;
+    filter: grayscale();
+}
+
+.content {
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.content section {
+    margin-bottom: 10px;
 }
